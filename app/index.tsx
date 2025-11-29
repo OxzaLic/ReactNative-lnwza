@@ -47,10 +47,19 @@ export default function Index() {
         <Link href="/flexbox/ex12" style={styles.link}>
           <Text style={styles.linkText}>Ex12</Text>
         </Link>
+        <Link href="/test-components" style={styles.link}>
+          <Text style={styles.linkText}>TestComponent</Text>
+        </Link>
+        <Link href="/test-greeting" style={styles.link}>
+          <Text style={styles.linkText}>TestGreesting</Text>
+        </Link>
 
-
-
-
+        <Link href="/travel" style={styles.link}>
+          <Text style={styles.linkText}>Travel</Text>
+        </Link>
+        <Link href="/resort" style={styles.link}>
+          <Text style={styles.linkText}>Resort</Text>
+        </Link>
 
 
       </View>
