@@ -1,5 +1,5 @@
-import { Link, router } from "expo-router";
-import { ScrollView, Button, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -60,6 +60,20 @@ export default function Index() {
         <Link href="/resort" style={styles.link}>
           <Text style={styles.linkText}>Resort</Text>
         </Link>
+
+
+
+        <Link href="/health" style={styles.link}>
+          <Text style={styles.linkText}>Health</Text>
+        </Link>
+
+        <Link href="/home" style={styles.link}>
+          <Text style={styles.linkText}>Home</Text>
+        </Link>
+
+
+
+
 
 
       </View>

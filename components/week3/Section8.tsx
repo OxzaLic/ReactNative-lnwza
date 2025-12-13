@@ -1,28 +1,51 @@
 import React from "react";
-import { View, TextInput } from "react-native";
-import MyIcon from "./MyIcon";
-
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Menu() {
     return (
-        <View style={{ margin: 20, padding: 10, borderWidth: 1, borderColor: 'gray', borderRadius: 20 }}>
-            {/* View ก้อนที่ 1 */}
-            <View >
-                <TextInput style={{ fontSize: 20 }} placeholder="What're you looking for?" />
-            </View>
-            {/* View ก้อนที่ 2 */}
-            <View style={{ flexDirection: "row", marginTop: 10 }}>
-                <MyIcon title="Hotel" name="building" size={30} color="orange" />
-                <MyIcon title="Tour" name="map-marker" size={30} color="orange" />
-                <MyIcon title="Car" name="car" size={30} color="orange" />
-                <MyIcon title="Flight" name="plane" size={30} color="orange" />
-            </View>
-            {/* View ก้อนที่ 3 */}
-            <View style={{ flexDirection: "row", marginTop: 10 }}>
-                <MyIcon title="Cruise" name="ship" size={30} color="orange" />
-                <MyIcon title="Bus" name="bus" size={30} color="orange" />
-                <MyIcon title="Event" name="star" size={30} color="orange" />
-                <MyIcon title="More" name="ellipsis-h" size={30} color="orange" />
+        <View
+            style={{
+                margin: 20,
+                padding: 10,
+                marginTop: 0,
+                borderTopWidth: 1,
+                borderTopColor: "#cccccc",
+            }}
+        >
+            {/* View ก้อนที่ 1  */}
+            <View
+                style={{
+                    flexDirection: "row",
+                    padding: 1,
+                    justifyContent: "space-between",
+                }}
+            >
+                <View>
+                    <Text style={{ fontSize: 15, color: "black", fontWeight: "bold" }}>
+                        Price
+                    </Text>
+                    <Text style={{ fontSize: 20, color: "#DE5139", fontWeight: "bold" }}>
+                        $399.99
+                    </Text>
+                    <Text style={{ fontSize: 12, color: "black", fontWeight: "bold" }}>
+                        AVG/Night
+                    </Text>
+                </View>
+
+                <TouchableOpacity>
+                    <View
+                        style={{
+                            height: 50,
+                            width: 120,
+                            borderRadius: 8,
+                            backgroundColor: "#DE5139",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <Text style={{ fontSize: 18, color: "white" }}>Book Now</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     );
