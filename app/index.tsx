@@ -84,7 +84,15 @@ export default function Index() {
           <Text style={styles.linkText}>Todo List</Text>
         </Link>
 
-
+        <Link href="/location" style={styles.link}>
+          <Text style={styles.linkText}>Location</Text>
+        </Link>
+        
+        <Link href="/location" style={styles.link}>
+          <Text style={styles.linkText}>Location</Text>
+        </Link>        <Link href="/location" style={styles.link}>
+          <Text style={styles.linkText}>Location</Text>
+        </Link>
 
 
       </View>
