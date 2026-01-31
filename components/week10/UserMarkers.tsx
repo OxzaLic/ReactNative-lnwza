@@ -17,7 +17,7 @@ export default function UserMarkers(props:any) {
     >
         <FontAwesome name="user" size={20} color="tomato" />
         <Callout>
-            <View style={{ padding: 5, minWidth: 300, alignItems: 'center' }}>
+            <View style={{ padding: 5, minWidth: 250, alignItems: 'center' }}>
               <Text>User ID: {item.user_id}</Text> 
             </View>
           </Callout>

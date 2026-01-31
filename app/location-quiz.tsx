@@ -25,7 +25,7 @@ export default function LocationQuiz() {
             {/*<Text>{JSON.stringify(location)}</Text>*/}
 
             <Text>{location ? new Date(location.timestamp).toString() : "-"}</Text>
-            <View style={{ flexDirection: 'row', height: 70, backgroundColor: "#50E3C2" }}>
+            <View style={{ flexDirection: 'row', height: 70,backgroundColor: "#50E3C2" }}>
                 <View style={{ flex: 1, flexDirection: 'column' }}>
                     <Text style={{ textAlign: 'center' }}>Lat/Lon</Text>
                     <Text style={{ textAlign: 'center' }}>{location ? location.coords.latitude : "-"}</Text>
